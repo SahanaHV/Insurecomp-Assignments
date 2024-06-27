@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sales Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sales Report</h1>
+    <p>Here are the sales data.</p>
+    <ol>
+      <li id="total"></li>
+      <li id="monthWiseSales">
+        Month wise sales totals:
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>Total</th>
+          </tr>
+          <tbody id="table-body"></tbody>
+        </table>
+      </li>
+      <li>
+        Most popular item (most quantity sold) in each month
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>SKU</th>
+            <th>Total Quantity</th>
+          </tr>
+          <tbody id="popular-items"></tbody>
+        </table>
+      </li>
+      <li>
+        Items generating most revenue in each month:
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>SKU</th>
+            <th>Revenue</th>
+          </tr>
+          <tbody id="revenue-data"></tbody>
+        </table>
+      </li>
+      <li>
+        For the most popular item, find the min, max and average number of
+        orders each month.
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Average</th>
+          </tr>
+          <tbody id="min-max-avg-data"></tbody>
+        </table>
+      </li>
+    </ol>
+  </body>
+</html>
